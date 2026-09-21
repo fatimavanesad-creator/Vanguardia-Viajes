@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resumen de Destinos - Excellence Travel</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- MENÚ SUPERIOR -->
+    <nav class="menu-superior">
+        <a href="inicio.php" class="menu-logo"><span>E</span> Excellence Travel</a>
+        <div class="menu-enlaces">
+            <?php include('Menu.php'); ?>
+        </div>
+    </nav>
+
+    <!-- BANNER HERO RESUMEN -->
+    <header class="hero-banner" style="background-image: url('img/banner-resumen.jpg'); height: 300px;">
+        <div class="hero-content">
+            <h1>Resumen de Destinos</h1>
+        </div>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <main class="contenedor-agencia">
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <p style="color: #666; font-size: 1.1rem;">Una vista rápida de los seis países que forman parte de nuestro recorrido exclusivo.</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>País</th>
+                    <th>Atractivo Principal</th>
+                    <th>Comida Típica</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>México</strong></td>
+                    <td>Zonas arqueológicas y playas paradisíacas</td>
+                    <td>Tacos, mole y pozole</td>
+                    <td><a href="pais_1.php">Ver más</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Corea del Sur</strong></td>
+                    <td>Palacios imperiales y metrópolis tecnológicas</td>
+                    <td>Kimchi y barbacoa coreana</td>
+                    <td><a href="pais_2.php">Ver más</a></td>
+                </tr>
+                <tr>
+                    <td><strong>España</strong></td>
+                    <td>Arquitectura histórica y costas mediterráneas</td>
+                    <td>Paella y jamón ibérico</td>
+                    <td><a href="pais_3.php">Ver más</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Colombia</strong></td>
+                    <td>Ecosistemas andinos y playas caribeñas</td>
+                    <td>Bandeja paisa y arepas</td>
+                    <td><a href="pais_4.php">Ver más</a></td>
+                </tr>
+                <tr>
+                    <td><strong>El Salvador</strong></td>
+                    <td>Volcanes imponentes y playas para surf</td>
+                    <td>Pupusas y riguas</td>
+                    <td><a href="pais_5.php">Ver más</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Noruega</strong></td>
+                    <td>Fiordos majestuosos y auroras boreales</td>
+                    <td>Salmón ahumado y brunost</td>
+                    <td><a href="pais_6.php">Ver más</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="inicio.php" class="btn-volver-atras">← Volver al inicio</a>
+        </div>
+    </main>
+
+</body>
+</html>

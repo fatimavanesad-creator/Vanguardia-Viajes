@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>España - Agencia de Viajes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <nav class="menu-superior">
+        <a href="index.html" class="menu-logo"><span>E</span> Excellence Travel</a>
+        <div class="menu-enlaces">
+            <a href="index.html">Inicio</a>
+            <a href="Menu.html">Destinos</a>
+            <a href="Resumen.html">Resumen</a>
+        </div>
+    </nav>
+
+    <header class="hero-banner" style="background-image: url('españa.jpg');">
+        <div class="hero-content"><h1>España</h1></div>
+        <div class="subnav-banner">
+            <a href="#detalles">Detalles</a>
+            <a href="#galeria">Galería</a>
+            <a href="#historia">Itinerario / Historia</a>
+            <a href="#consultar">Consultar</a>
+        </div>
+    </header>
+
+    <main class="contenedor-agencia">
+        <div class="detalles-rapidos" id="detalles">
+            <div>⏱️ Duración: <span>12 Días</span></div>
+            <div>✈️ Transporte: <span>Tren de alta velocidad y privado</span></div>
+            <div>🏨 Alojamiento: <span>Paradores y hoteles 4*</span></div>
+            <div>🗣️ Acompañamiento: <span>Guía experto oficial</span></div>
+        </div>
+
+        <div class="grid-layout">
+            <div>
+                <div class="seccion-bloque" id="galeria">
+                    <h2>Galería del Destino</h2>
+                    <div class="galeria-principal"><img src="españa.jpg" alt="España"></div>
+                    <div class="miniaturas">
+                        <img src="imagen_3e.jpg" alt="Miniatura">
+                        <img src="imagen_3e.jpg" alt="Miniatura">
+                        <img src="imagen_3e.jpg" alt="Miniatura">
+                        <img src="imagen_3e.jpg" alt="Miniatura">
+                    </div>
+                </div>
+
+                <div class="seccion-bloque" id="historia" style="margin-top: 2rem;">
+                    <h2>Sobre el Viaje</h2>
+                    <p>España te espera con su rica herencia arquitectónica, desde las obras maestras de Gaudí en Barcelona hasta la imponente Alhambra en Granada y las costas del Mediterráneo.</p>
+                    <h2>Historia y Cultura</h2>
+                    <p>Cruce de caminos entre Europa y África, el territorio español guarda huellas fenicias, romanas, visigodas y andalusíes que configuran una identidad única en el mundo.</p>
+                    <p>Famosa por su carácter hospitalario, sus fiestas populares de interés turístico internacional y una animada vida en la calle que te hará sentir como en casa.</p>
+                    <h2>Gastronomía</h2>
+                    <p>Una de las cocinas más aclamadas del planeta. Disfruta de tapas tradicionales, auténtica paella valenciana, jamón ibérico de bellota y excelentes vinos.</p>
+                </div>
+                <div style="margin-top: 2rem;"><a href="index.html" class="btn-volver-atras">← Volver al inicio</a></div>
+            </div>
+
+            <div>
+                <div class="caja-consultar" id="consultar">
+                    <h3>Consultar</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group"><label>Nombre completo</label><input type="text" required></div>
+                        <div class="form-group"><label>Email</label><input type="email" required></div>
+                        <div class="form-row">
+                            <div class="form-group"><label>Fecha de llegada</label><input type="date"></div>
+                            <div class="form-group"><label>Fecha de partida</label><input type="date"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group"><label>Adultos</label><input type="number" value="2" min="1"></div>
+                            <div class="form-group"><label>Menores</label><input type="number" value="0" min="0"></div>
+                        </div>
+                        <div class="form-group"><label>Idioma</label><select><option>Español</option><option>Inglés</option></select></div>
+                        <div class="form-group"><label>Mensaje</label><textarea placeholder="Escribe tus dudas o requerimientos..."></textarea></div>
+                        <button type="submit" class="btn-enviar">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

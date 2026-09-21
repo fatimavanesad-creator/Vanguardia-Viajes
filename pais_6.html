@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noruega - Agencia de Viajes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <nav class="menu-superior">
+        <a href="index.html" class="menu-logo"><span>E</span> Excellence Travel</a>
+        <div class="menu-enlaces">
+            <a href="index.html">Inicio</a>
+            <a href="Menu.html">Destinos</a>
+            <a href="Resumen.html">Resumen</a>
+        </div>
+    </nav>
+
+    <header class="hero-banner" style="background-image: url('noruega.jpg');">
+        <div class="hero-content"><h1>Noruega</h1></div>
+        <div class="subnav-banner">
+            <a href="#detalles">Detalles</a>
+            <a href="#galeria">Galería</a>
+            <a href="#historia">Itinerario / Historia</a>
+            <a href="#consultar">Consultar</a>
+        </div>
+    </header>
+
+    <main class="contenedor-agencia">
+        <div class="detalles-rapidos" id="detalles">
+            <div>⏱️ Duración: <span>10 Días</span></div>
+            <div>✈️ Transporte: <span>Cruceros por fiordos y tren panorámico</span></div>
+            <div>🏨 Alojamiento: <span>Hoteles escandinavos 4 y 5*</span></div>
+            <div>🗣️ Acompañamiento: <span>Guía experto de naturaleza</span></div>
+        </div>
+
+        <div class="grid-layout">
+            <div>
+                <div class="seccion-bloque" id="galeria">
+                    <h2>Galería del Destino</h2>
+                    <div class="galeria-principal"><img src="noruega.jpg" alt="Noruega"></div>
+                    <div class="miniaturas">
+                        <img src="imagen_6n.jpg" alt="Miniatura">
+                        <img src="imagen_6n.jpg" alt="Miniatura">
+                        <img src="imagen_6n.jpg" alt="Miniatura">
+                        <img src="imagen_6n.jpg" alt="Miniatura">
+                    </div>
+                </div>
+
+                <div class="seccion-bloque" id="historia" style="margin-top: 2rem;">
+                    <h2>Sobre el Viaje</h2>
+                    <p>Noruega asombra por sus paisajes naturales colosales: profundos fiordos azules esculpidos por glaciares, imponentes cascadas y montañas que caen al mar.</p>
+                    <h2>Historia y Cultura</h2>
+                    <p>Tierra de legendarios navegantes vikingos, que transformaron su geografía desafiante en una de las sociedades modernas más prósperas y respetuosas con el medio ambiente.</p>
+                    <p>Basada en el concepto del <em>friluftsliv</em> (vida al aire libre), combina el diseño nórdico minimalista con una profunda conexión y respeto por la naturaleza salvaje.</p>
+                    <h2>Gastronomía</h2>
+                    <p>Gastronomía basada en los tesoros del mar del Norte. Degusta salmón fresco de primera calidad, mariscos y el tradicional queso marrón noruego (Brunost).</p>
+                </div>
+                <div style="margin-top: 2rem;"><a href="index.html" class="btn-volver-atras">← Volver al inicio</a></div>
+            </div>
+
+            <div>
+                <div class="caja-consultar" id="consultar">
+                    <h3>Consultar</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group"><label>Nombre completo</label><input type="text" required></div>
+                        <div class="form-group"><label>Email</label><input type="email" required></div>
+                        <div class="form-row">
+                            <div class="form-group"><label>Fecha de llegada</label><input type="date"></div>
+                            <div class="form-group"><label>Fecha de partida</label><input type="date"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group"><label>Adultos</label><input type="number" value="2" min="1"></div>
+                            <div class="form-group"><label>Menores</label><input type="number" value="0" min="0"></div>
+                        </div>
+                        <div class="form-group"><label>Idioma</label><select><option>Español</option><option>Inglés</option></select></div>
+                        <div class="form-group"><label>Mensaje</label><textarea placeholder="Escribe tus dudas o requerimientos..."></textarea></div>
+                        <button type="submit" class="btn-enviar">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
